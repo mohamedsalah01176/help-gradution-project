@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(#000 ,#333);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 25px; */
+}
+.card{
+    min-height: 320px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+.image{
+    height: 300px;
+    width: 360px;
+    text-align: center;
+}
+
+.title{
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+}
+.discription{
+    max-width: 350px;
+    color: #ccc;
+    line-height: 1.5;
+}
+.text .btn{
+    padding: 13px 17px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+    background-color: #c82a2a;
+}
+.text .btn:hover{
+    background-color: #de3b3b;
+    transform: scale(1.1);
+}
+
+@media (max-width:800px) {
+    .card{
+        display: block;
+    }
+}
